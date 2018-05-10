@@ -6,7 +6,7 @@ import { MaterialModule } from '../shared/material/material.module';
 
 import { ChatComponent } from './chat.component';
 import { SocketService } from './shared/services/socket.service';
-// import { DialogUserComponent } from './dialog-user/dialog-user.component';
+import { DialogUserComponent } from './dialog-user/dialog-user.component';
 
 @NgModule({
   imports: [
@@ -15,8 +15,8 @@ import { SocketService } from './shared/services/socket.service';
     ReactiveFormsModule,
     MaterialModule
   ],
-  declarations: [ChatComponent],  // declarations: [ChatComponent, DialogUserComponent],
+  declarations: [ChatComponent, DialogUserComponent],  // declarations: [ChatComponent, DialogUserComponent],
   providers: [SocketService],
-  // entryComponents: [DialogUserComponent]
+  entryComponents: [DialogUserComponent]
 })
 export class ChatModule { }
