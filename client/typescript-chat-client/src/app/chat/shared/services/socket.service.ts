@@ -5,8 +5,11 @@ import { Message } from '../model/message';
 import { Event } from '../model/event';
 
 import * as socketIo from 'socket.io-client';
+import { environment } from '../../../../environments/environment.prod';
 
 const SERVER_URL = 'http://localhost:8080';
+// i need to swich host with env var
+
 
 @Injectable()
 export class SocketService {

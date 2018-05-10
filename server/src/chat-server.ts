@@ -2,7 +2,8 @@ import { createServer, Server } from 'http';
 import * as express from 'express';
 import * as socketIo from 'socket.io';
 
-import { Message } from './model/index';
+// import { Message } from './model/index';
+import { Message, User, ChatMessage } from './model'
 
 export class ChatServer {
     public static readonly PORT:number = 8080;
