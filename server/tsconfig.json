@@ -4,6 +4,7 @@
     "src/model/*.ts"
   ],
   "compilerOptions": {
+    "lib": ["es5", "es6", "dom"], 
     "target": "es5"
   }
 }
